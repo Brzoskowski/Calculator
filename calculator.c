@@ -123,6 +123,25 @@ void extras(){
         puts("1 - Temperature Conversor");
         puts("2 - Measurement Conversor");
         puts("3 - Currency Conversor");
+        puts("0 - Return");
         printf("\nWhat type of operation would you like to do? ");
         scanf("%1d", &operation);
+        
+    switch{
+        case 0:{
+            moreop();
+            break;
+        }
+        case 1:{
+
+        }
+        case 2:{
+
+        }
+        case 3:{
+       
+        }
+           
+    }
+            
 }
