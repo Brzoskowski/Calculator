@@ -21,6 +21,40 @@ int main(){
     printf("\nWhat type of operation would you like to do? ");
     scanf("%1d", &operation);
 
+    if (operation != 0)
+    {
+    printf("Insert value of X: ");
+        scanf("%lf", &num1);
+    printf("Insert value of Y: ");
+        scanf("%lf", &num2);
+    }
+    switch (operation)
+    {
+    case 1:
+        result = num1 + num2;
+        printf("The result of the operation %.2f + %.2f = %.2f", num1, num2, result);
+        break;
+    case 2:
+        result = num1 - num2;
+        printf("The result of the operation %.2f - %.2f = %.2f", num1, num2, result);
+        break;
+    case 3:
+        result = num1 * num2;
+        printf("The result of the operation %.2f * %.2f = %.2f", num1, num2, result);
+        break;
+    case 4:
+        result = num1 / num2;
+        printf("The result of the operation %.2f / %.2f = %.2f", num1, num2, result);
+        break;
+    case 5:
+        result = (int) num1 % (int) num2;
+        printf("The modulus of the operation %.2f / %.2f = %.2f", num1, num2, result);
+        break;
+    case 6:
+        result = pow(num1, num2);
+        printf("%.2f to the power of %.2f = %.2f", num1, num2, result);
+        break;
+    }
 if (operation == 0)
 {
     puts("1 - Area");
@@ -31,7 +65,9 @@ if (operation == 0)
     puts("6 - Cos");
     puts("7 - Tan");
     puts("8 - Logaritm");
-    puts("0 - Extras (Beta)\n");
+    puts("0 - Extras (Beta)");
+    printf("\nWhat type of operation would you like to do? ");
+    scanf("%1d", &operation);
 }
 if (operation == 0)
 {
@@ -39,51 +75,5 @@ if (operation == 0)
     puts("2 - Measurement Conversor");
     puts("3 - Currency Conversor");
 }
-
-/*
-     printf("\nWhat type of operation would you like to do? ");
-    scanf("%1d", &operation);
-
-    printf("Insert value of X: ");
-    scanf("%lf", &num1);
-    printf("Insert value of Y: ");
-    scanf("%lf", &num2);
-
-    switch (operation)
-    {
-    case 0:
-        result = num1 + num2;
-        printf("The result of the operation %.2f + %.2f = %.2f", num1, num2, result);
-        break;
-    case 1:
-        result = num1 - num2;
-        printf("The result of the operation %.2f - %.2f = %.2f", num1, num2, result);
-        break;
-    case 2:
-        result = num1 * num2;
-        printf("The result of the operation %.2f * %.2f = %.2f", num1, num2, result);
-        break;
-    case 3:
-        result = num1 / num2;
-        printf("The result of the operation %.2f / %.2f = %.2f\n", num1, num2, result);
-        break;
-    case 4:
-        result = num1 / num2;
-        printf("The result of the operation %.2f / %.2f = %.2f\n", num1, num2, result);
-        break;
-/*    case 5:
-        result = num1 / num2;
-        printf("The result of the operation %.2f / %.2f = %.2f\n", num1, num2, result);
-        break;
-    case 6:
-        result = num1 / num2;
-        printf("The result of the operation %.2f / %.2f = %.2f\n", num1, num2, result);
-        break;
-    case 7:
-        result = num1 / num2;
-        printf("The result of the operation %.2f / %.2f = %.2f\n", num1, num2, result);
-        break;
-    }
-*/
     return 0;
 }
